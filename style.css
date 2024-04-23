@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
 * {
 	padding:0;
 	margin:0;
-	font-family: sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -15,25 +18,38 @@ a {
 .medsos {
 	padding:5px 0;
 	background-color: #148F77;
+	position: fixed;
 }
 .medsos ul li {
 	display: inline-block;
 	color: #fff;
 	margin-right: 10px;
+
 }
 .container {
 	width:80%;
 	margin:0 auto;
 }
+
 .container:after {
 	content:'';
 	display: block;
 	clear: both;
 }
+
+header{
+	background: #148F77;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+}
+
 header h1 {
 	float: left;
 	padding:15px 0;
-	color: #148F77;
+	color: #eaeaea;
+	position: sticky;
+	z-index: 1;
 }
 header ul {
 	float: right;
@@ -47,14 +63,13 @@ header ul li a {
 }
 
 header ul li a:hover{
-    background-color: #148F77;
+    background-color: #83cbbd;
 }
 
-
 .banner{
-    height: 60vh;
+    height: 100vh;
     border: 1px solid;
-    background-image: url('gambar/banner.jpeg');
+    background-image: url('gambar/pixel.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -85,7 +100,9 @@ section{
     z-index: 1;
 }
 
+
 section h3{
+	padding-top: 30px;
     text-align: center;
 	font-size: 30px;
 }
@@ -119,6 +136,7 @@ section h3{
 section h4{
 	text-align: center;
 	font-size: 30px;
+	padding-top: 30px;
 
 }
 
@@ -161,3 +179,47 @@ section h8{
 	padding: 20px 0;
 }
 
+  
+.banner h2 span {
+	color: #001ca9;
+	
+  }
+
+.loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f7f9fb;
+	transition: opacity 10s, visibility 1s;
+	z-index: 3;
+
+}
+
+.loader-hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.loader::after{
+	content: "";
+	width: 75px;
+	height: 75px;
+	border: 15px solid #dddddd;
+	border-radius: 50px;
+	border-top-color: #7449f5;
+	animation: loading 1s ease infinite;
+}
+  
+@keyframes loading{
+	from{
+		transform: rotate(0turn)
+	}
+	to{
+		transform: rotate(1turn);
+	}
+}
