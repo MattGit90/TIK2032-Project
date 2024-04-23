@@ -195,7 +195,7 @@ section h8{
 	justify-content: center;
 	align-items: center;
 	background-color: #f7f9fb;
-	transition: opacity 10s, visibility 1s;
+	transition: opacity 3s, visibility 1s;
 	z-index: 3;
 
 }
