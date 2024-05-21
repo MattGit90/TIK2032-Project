@@ -8,9 +8,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root"; // Ganti dengan username Anda
     $password = ""; // Ganti dengan password Anda
-    $dbname = "user_db"; // Ganti dengan nama database Anda
+    $dbname = "tik2032"; // Ganti dengan nama database Anda
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
 
     // Periksa koneksi
     if ($conn->connect_error) {
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <li class="active"><a href="#utama"  class="nav-link clr-transition">Home</a></li>
                 <li><a href="#blog" class="nav-link clr-transition">Blog</a></li>
                 <li><a href="#gallery"  class="nav-link clr-transition">Gallery</a></li>
-                <li><a href="kontak/contact.html"  class="nav-link clr-transition">Contact</a></li> 
+                <li><a href="kontak/contact.php"  class="nav-link clr-transition">Contact</a></li> 
             </ul>
         </div>
     </header>    
