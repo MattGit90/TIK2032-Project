@@ -12,6 +12,7 @@ a {
 .container {
     width: 80%;
     margin: 0 auto;
+
 }
 
 .container:after {
@@ -54,12 +55,12 @@ header ul li a:hover {
 }
 
 .main {
-    width: 48%; /* Sesuaikan lebar sesuai kebutuhan */
-    padding: 20px;
+    width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
+    padding: auto;
     border-radius: 20px;
     background-color: #148F77;
     border: 1px solid;
-    text-align: left;
+    text-align: center;
 }
 
 .main ul {
@@ -74,18 +75,24 @@ header ul li a:hover {
 .hubungi {
     margin: 0 auto;
     padding-bottom: 10px;
+    padding-top: 20px;
 }
 
-.profil img {
-    height: 120px;
-    width: 125px;
+.profile img{
+    height: 150px;
+    width: 150px;
 }
 
-
+.logo ul li {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    align-items: center;
+}
 
 .review-form {
-    width: 50%; /* Sesuaikan lebar sesuai kebutuhan */
-    padding: 20px;
+    width: 94%;
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
@@ -102,7 +109,7 @@ header ul li a:hover {
 }
 
 .review-form button {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border: none;
     border-radius: 5px;
