@@ -15,16 +15,24 @@ a {
 
 }
 
+
 .container:after {
     content: '';
     display: block;
     clear: both;
 }
 
+.nav-items{
+    color: #eaeaea;
+}
+
+
 header h1 {
     float: left;
-    padding: 15px 0;
-    color: #148F77;
+	padding:15px 0;
+	color: #eaeaea;
+	position: sticky;
+	z-index: 1;
 }
 
 header ul {
@@ -41,24 +49,23 @@ header ul li a {
 }
 
 header ul li a:hover {
-    background-color: #148F77;
+    background-color: #1C2833;
 }
 
 .form-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    background-color: #fff; /* Background color untuk kotak */
+    background-color: #17202A; /* Background color untuk kotak */
     padding: 20px;
-    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opsional: Tambahkan bayangan untuk estetika */
+    width: 96.8%;
 }
 
 .main {
     width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
     padding: auto;
     border-radius: 20px;
-    background-color: #148F77;
+    background-color: #283747;
     border: 1px solid;
     text-align: center;
 }
@@ -81,6 +88,7 @@ header ul li a:hover {
 .profile img{
     height: 150px;
     width: 150px;
+    border-radius: 10px;
 }
 
 .logo ul li {
@@ -113,18 +121,18 @@ header ul li a:hover {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: #12202f;
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
 .review-form button:hover {
-    background-color: #0056b3;
+    background-color: #425162;
 }
 
 section {
-    background-image: linear-gradient(90deg, rgba(20,143,119,1) 2%, rgba(15,171,140,1) 19%, rgba(30,201,168,1) 78%, rgba(20,143,119,1) 100%);
+    background-image: linear-gradient(90deg, rgba(46,52,57,1) 28%, rgba(40,48,56,1) 67%);
     padding-bottom: 80px;
     border: 1px solid;
 }
