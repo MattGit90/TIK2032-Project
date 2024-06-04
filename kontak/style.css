@@ -55,7 +55,7 @@ header ul li a:hover {
 .form-container {
     display: flex;
     justify-content: space-between;
-    background-color: #17202A; /* Background color untuk kotak */
+    background-color: #17202A;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opsional: Tambahkan bayangan untuk estetika */
 }
@@ -130,8 +130,8 @@ header ul li a:hover {
     background-color: #425162;
 }
 
-section {
+/* section {
     background-image: linear-gradient(90deg, rgba(46,52,57,1) 28%, rgba(40,48,56,1) 67%);
     padding-bottom: 80px;
     border: 1px solid;
-}
+} */

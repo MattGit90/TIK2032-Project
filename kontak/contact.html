@@ -45,10 +45,16 @@
             </div>
     </header>
 
-    <section class="background">
+    <div class="background">
+
+        <div id="particles-js"></div>
+        <div class="count-particles"> <span class="js-count-particles"></span></div>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
         <div class="container">
             <div class="main">
-                <h2 class="hubungi">Hubungi Saya</h2>
+                <h2 class="hubungi">Contact Me</h2>
                 <div class="profile">
                     <img src="../gambar/profil.jpeg">
                 </div> 
@@ -64,7 +70,7 @@
 
 
                 <form class="review-form" action="contact.html" method="post">
-                    <h3>DIRECT REVIEW</h3>
+                    <h3>Send me a Message!</h3>
                     <input type="text" placeholder="Name" name="username"/>
                     <textarea placeholder="Your Review" name="yourtext"></textarea>
                     <button type="submit" name="send">SEND</button>
@@ -72,7 +78,9 @@
             </div>
         </div>
         
-    </section>
+        <link rel="stylesheet" type="text/css" href="/background/background.css">
+        <script src="/background/bg.js"></script>
+    </div>
     
 </body>
 </html>
